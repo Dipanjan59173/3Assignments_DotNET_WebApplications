@@ -1,0 +1,6 @@
+Two radio buttons 
+1st circket playes and 2nd tennis players
+on click of radio buttons pannel vissible
+Three hYperlink on each topic and htmlpage for each hyperlink and few details of players
+
+Done in CricketPlayersWebAssign folder
