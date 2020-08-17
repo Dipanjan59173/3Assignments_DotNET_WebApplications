@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="tranning" Class="EmployeeDataClassDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=DESKTOP-I047OES;Initial Catalog=tranning;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="tranningConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.EmployeTbl" Member="EmployeTbls">
+    <Type Name="EmployeTbl">
+      <Column Name="empId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="empName" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="empSal" Type="System.Single" DbType="Real" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.Sp_searchEmp" Method="Sp_searchEmp">
+    <Parameter Name="empid" Type="System.Int32" DbType="Int" />
+    <ElementType Name="Sp_searchEmpResult">
+      <Column Name="empId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="empName" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="empSal" Type="System.Single" DbType="Real" CanBeNull="true" />
+    </ElementType>
+  </Function>
+</Database>
